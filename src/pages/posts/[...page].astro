@@ -20,8 +20,8 @@ export interface Props {
 const { page, allTags } = Astro.props as Props;
 
 const meta = {
-	title: "Posts",
-	description: "A collection of posts by me for a starter Astro theme",
+	title: "التدوينات",
+	description: "تدوينات كُتبت بواسطة الصبار الفضائي",
 };
 
 const paginationProps = {
@@ -41,10 +41,10 @@ const paginationProps = {
 ---
 
 <PageLayout meta={meta}>
-	<h1 class="mb-6 title">Posts</h1>
+	<h1 class="mb-6 title">التدوينات</h1>
 	<div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
 		<section aria-label="Blog post list">
-			<ul class="text-left space-y-8">
+			<ul class="text-right space-y-8">
 				{
 					page.data.map((p) => (
 						<li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full">
@@ -75,7 +75,7 @@ const paginationProps = {
 							<path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116" />
 							<path d="M6 9h-.01" />
 						</svg>
-						Tags
+						الوسوم
 					</h2>
 					<ul class="flex flex-wrap gap-2 text-bgColor">
 						{allTags.map((tag) => (
@@ -96,7 +96,7 @@ const paginationProps = {
 							href="/tags"
 							aria-label="View all blog categories"
 						>
-							أعرض الكل ←
+							اِعرض الكل ←
 						</a>
 					</span>
 				</aside>

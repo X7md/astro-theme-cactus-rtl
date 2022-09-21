@@ -19,14 +19,14 @@ const paginationProps = {
 	...(prev && {
 		prevUrl: {
 			url: prev.url,
-			text: `← ${prev.frontmatter.title}`,
+			text: `${prev.frontmatter.title} ←`,
 			srLabel: " Previous Article:",
 		},
 	}),
 	...(next && {
 		nextUrl: {
 			url: next.url,
-			text: `${next.frontmatter.title} →`,
+			text: `→ ${next.frontmatter.title}`,
 			srLabel: "Next Article:",
 		},
 	}),
