@@ -11,6 +11,8 @@ const { publishDate } = post.frontmatter;
 const date = new Date(publishDate);
 const datetime = date.toISOString();
 const postDate = getLocaleTime(date, { month: "short"}, "ar-SA");
+
+const tt = new Intl.DateTimeFormat('ar-SA', {}).format(date)
 ---
 
 <time {datetime} class="min-w-[170px] text-gray-500 text-right">{postDate}</time>
@@ -21,6 +23,6 @@ const postDate = getLocaleTime(date, { month: "short"}, "ar-SA");
 </Element>
 {
 	withDesc && (
-		<q class="block italic line-clamp-3 text-right pr-5">{post.frontmatter.description}</q>
+		<p class="block italic line-clamp-3 text-right pr-5 pt-2">«{post.frontmatter.description}»</p>
 	)
 }
