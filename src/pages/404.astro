@@ -4,14 +4,14 @@ import { Image } from "@astrojs/image/components";
 import aboutImg from "../assets/about-astro.png";
 
 const meta = {
-	title: "Oops! You found a missing page!",
-	description: "Oops! It looks like this page is lost in space!",
+	title: "خطأ مّا حدث!",
+	description: "يبدو أن الصفحة تاهت في الفضاء!",
 };
 ---
 
 <PageLayout meta={meta}>
 	<h1 class="mb-6 title">404 | خطأ مّا حدث</h1>
-	<p class="mb-8">دعنا نعيدكُ حيث أتيت</p>
+	<p class="mb-8">عُد أدراجك!</p>
 	<div class="grid justify-center my-4 rotate-180">
 		<Image src={aboutImg} alt="A cartoon cactus looking at 'Astro.build' logo"
 		/>

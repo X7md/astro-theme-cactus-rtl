@@ -2,8 +2,8 @@
 layout: "@/layouts/BlogPost"
 title: تجربة تجربة 123!
 publishDate: 13 May 2022
-description: وصف مختصر وجميل
-tags: ["مثال", "تدوينة"]
+description: تجربة لمكونات التنسيق، وقدرات النمط وإضافاته
+tags: ["مثال", "شخصي"]
 ---
 
 import { Image } from "@astrojs/image/components";
@@ -11,6 +11,8 @@ import { Image } from "@astrojs/image/components";
 ## أهلًا بالعالم
 
 هذا النص مجرد مثال لتجربة الكتابة باللغة العربية على قالب الصبار المُعرب.
+هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
 
 <Image
 	src="https://picsum.photos/id/1025/550/460"
@@ -19,42 +21,42 @@ import { Image } from "@astrojs/image/components";
 	height={460}
 />
 
-## Using some markdown elements
+## هنا بعض عناصر التنسيق
 
 هنا نجد قطعة من الترميز
 
 ```js
-let string = "JavaScript syntax highlighting";
+let string = "مثال على تنسيق ترميز بلغة جافاسكربت";
 ```
 
-This is styled by Shiki, set via the [config](https://docs.astro.build/en/guides/markdown-content/#syntax-highlighting) for Astro.
+تنسق النصوص بواسطة إم دي إكس (MDX) اضبطها من هنا: [الضبط](https://mdxjs.com/guides/syntax-highlighting/).
 
-You can choose your own theme from this [library](https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-themes), which is currently set to Dracula, in the file `astro.config.mjs`.
 
-Here is a horizontal rule.
+
+هنا شريط أفقي
 
 ---
 
-Here is a list:
+وهذه قائمة:
 
-- Item number 1
-- Item number 2
-- Item number 3
+- العنصر الأول
+- العنصر الثاني
+- العنصر الثالث
 
-And an ordered list:
+وهذه قائمة مرتبة:
 
-1. James Madison
-2. James Monroe
-3. John Quincy Adams
+1. جاموس إفريقي
+2. جاموس آسيوي
+3. جاموس ضخم
 
-Here is a table:
+هذا جدول:
 
-| Item         | Price | # In stock |
+| العنصر         | السعر | # الكمية |
 | ------------ | ----- | ---------- |
-| Juicy Apples | 1.99  |        739 |
-| Bananas      | 1.89  |          6 |
+| تفاح | 1.99  |        739 |
+| موز      | 1.89  |          6 |
 
-## Tailwind CSS Prose styling
+## تنسيقات النصوص من مكتبة (Tailwind CSS)
 
-> I'm a simple blockquote.
-> I'm styled by Tailwind CSS prose plugin
+> هنا اقتباس بسيط.
+> نص منسق بالإضافة أعلاهُ

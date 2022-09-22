@@ -2,19 +2,19 @@
 layout: "@/layouts/BlogPost"
 title: تدوينة ثانية
 publishDate: 12 June 2022
-description: هذه تدوينة أخرى
+description: هذه تدوينة أخرى فيها أمثلة إضافية على الترميز
 tags: ["مثال", "تدوينة"]
 value: 128
 ---
 import { Code } from "astro/components";
 
 
-## هذا غريب!
+## هذا لطيف جدًا!
 
-هل المتغيرات تعمل؟ {frontmatter.value * 2}?
+هل المتغيرات تعمل  {frontmatter.value * 2}؟
 
 ```js
-// Example JavaScript
+// مثال على جافاسكربت
 
 const x = 7;
 function returnSeven() {
@@ -24,7 +24,7 @@ function returnSeven() {
 
 أو 
 
-<Code code={`// Example JavaScript
+<Code code={`// مثال على جافاسكربت
 
 const x = 7;
 function returnSeven() {
